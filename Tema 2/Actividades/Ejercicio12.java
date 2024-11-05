@@ -14,8 +14,6 @@ public class Ejercicio12 {
         
         System.out.print("Introduce un número: ");
         int numero = scanner.nextInt();
-        
-        // Calcular el valor absoluto usando Math.abs()
         int valorAbsoluto = Math.abs(numero);
         
         System.out.println("El valor absoluto es: " + valorAbsoluto);
