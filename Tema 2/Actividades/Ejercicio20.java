@@ -4,6 +4,8 @@ suficiente (5), bien (6), notable (7 y 8) y sobresaliente (9 у 10).
 
 package tema2;
 
+import java.util.Scanner;
+
 public class Ejercicio20 {
     
 public static void main(String[] args) {
@@ -15,7 +17,7 @@ public static void main(String[] args) {
         int nota = scanner.nextInt();
 
         // Utilizar el switch para clasificar la nota
-        String clasificacion;
+        String clasificacion = null;
         switch (nota) {
             case 0: case 1: case 2: case 3: case 4:
                 clasificacion = "Insuficiente (0-4)";
