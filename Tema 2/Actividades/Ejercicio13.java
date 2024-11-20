@@ -8,7 +8,7 @@ public static void main(String[] args) {
         boolean resultado1 = 10 + 5 * 2 > 20 && 4 == 4;
         boolean resultado2 = !(7 + 3 >  10) || 3 * 2 <= 6;
         boolean resultado3 = 10 / 2 + 3 * 5 == 19 && true;
-        boolean resultado4 = x + = 2 * 3;
+        int resultado4 = x + = 2 * 3;
         boolean b = false;
         resultado5= b=!b|| 7% 2 ==1;
 
