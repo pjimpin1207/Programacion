@@ -1,7 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+/*Crear una tabla de longitud 10 que se inicializará con números aleatorios
+comprendidos entre 1 y 100. Mostrar la suma de todos los números aleatorios que
+se guardan en la tabla.
+*/
 package tema3;
     import java.util.Random;
 public class Ejercicio4 {
@@ -25,6 +25,8 @@ public class Ejercicio4 {
             System.out.print(numero + " ");
         }
         System.out.println();
+        
+        //Suma total
         System.out.println("Suma de los números aleatorios: " + suma);
     }
 }

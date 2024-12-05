@@ -1,4 +1,6 @@
-/* 
+/*Ejercicio 3
+Crea una tabla como la de la imagen que representa los sueldos de los empleados de una empresa.
+Auméntales el sueldo un 10% a cada empleado. Realiza la operación tanto con un for como con un foreach
  */
 package tema3;
 
