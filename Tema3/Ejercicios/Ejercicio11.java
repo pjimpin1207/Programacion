@@ -2,7 +2,6 @@
 package tema3;
 
 import java.util.Scanner;
-
 public class Ejercicio11 {
 
     public static void main(String[] args) {
@@ -41,7 +40,7 @@ public class Ejercicio11 {
      *
      * @param array El array donde se buscará el número.
      * @param numero El número que se quiere buscar.
-     * @return La posición del número en el array si lo encunetra, si no, -1.
+     * @return La posición del número en el array si lo encunetra (empezando en 0), si no, -1.
      */
     public static int buscarNumero(int[] array, int numero) {
         for (int i = 0; i < array.length; i++) {
