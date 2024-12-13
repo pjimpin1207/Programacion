@@ -76,22 +76,4 @@ public class Ejercicio17 {
         } while (!intento.equals(contrasena));
     }
 
-    /**
-     * Genera una pista mostrando los caracteres acertados y asteriscos en los no acertados.
-     *
-     * @param contrasena La contraseña original.
-     * @param intento    La palabra intentada por el jugador.
-     * @return Una cadena con caracteres acertados en sus posiciones y asteriscos en los demás.
-     */
-    public static String generarPista(String contrasena, String intento) {
-        StringBuilder pista = new StringBuilder();
-        for (int i = 0; i < contrasena.length(); i++) {
-            if (i < intento.length() && contrasena.charAt(i) == intento.charAt(i)) {
-                pista.append(contrasena.charAt(i));
-            } else {
-                pista.append('*');
-            }
-        }
-        return pista.toString();
-    }
 }
