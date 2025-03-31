@@ -22,6 +22,17 @@ public class Ejercicio3 {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
-//
+        // Igual pero con nombres
+        TreeSet<String> conjunto2 = new TreeSet<>();
+        conjunto2.add("A");
+        conjunto2.add("B");
+        conjunto2.add("C");
+        conjunto2.add("D");
+
+        System.out.println(conjunto2);
+
+        for (String i : conjunto2) {
+            System.out.println(i);
+        }
     }
 }
