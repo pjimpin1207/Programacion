@@ -1,5 +1,6 @@
 package Ejercicio3;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class Ejercicio3 {
@@ -16,6 +17,10 @@ public class Ejercicio3 {
 
         for (Integer i : conjunto) {
             System.out.println(i);
+        }
+        Iterator<Integer> iterator = conjunto.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
         }
 //
     }
