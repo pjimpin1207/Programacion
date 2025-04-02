@@ -32,15 +32,21 @@ public class ComparadorSet {
         mostrarElementosConIterador(treeSet);
         mostrarElementosConIterador(linkedHashSet);
 
-        SortedSet<Integer> conjnuntoAleatorio = new TreeSet<>();
-        conjuntoAleatorio.addAll(Arrays.asList(2,7,10,12,15,30,3,26));
-        Iterator<Integer> itRemove = conjnuntoAleatorio.iterator();
+        // Conjunto ordenado con números aleatorios
+        SortedSet<Integer> conjuntoAleatorio = new TreeSet<>();
+        conjuntoAleatorio.addAll(Arrays.asList(2, 7, 10, 12, 15, 30, 3, 26));
+        System.out.println("Conjunto ordenado: " + conjuntoAleatorio);
+
+        // Eliminación de números pares con iterador
+        Iterator<Integer> itRemove = conjuntoAleatorio.iterator();
         while (itRemove.hasNext()) {
-            e = itRemove.next();
-            if (e%2==0) {
+            int e = itRemove.next(); // Declarar variable correctamente
+            if (e % 2 == 0) {
                 itRemove.remove();
             }
         }
+
+        System.out.println("Conjunto después de eliminar pares: " + conjuntoAleatorio);
     }
 
     private static void medirTiempoInsercion(Set<Integer> set) {
@@ -52,7 +58,7 @@ public class ComparadorSet {
         System.out.println("Tiempo de inserción para " + set.getClass().getSimpleName() + ": " + (fin - inicio) + " ns");
     }
 
-    // Iteracion básica parte 5
+    // Iteración básica parte 5
     private static void mostrarElementosConIterador(Set<String> elementos) {
         Iterator<String> iterator = elementos.iterator();
         int contador = 1;
@@ -63,5 +69,4 @@ public class ComparadorSet {
             contador++;
         }
     }
-    }
-
+}
