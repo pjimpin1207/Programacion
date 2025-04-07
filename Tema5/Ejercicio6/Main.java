@@ -1,31 +1,48 @@
 package Ejercicio6;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Ejercicio5.Persona> personas = new ArrayList<>();
-        personas.add(new Ejercicio5.Persona("Juan", 25));
-        personas.add(new Ejercicio5.Persona("Ana", 28));
-        personas.add(new Ejercicio5.Persona("Ana", 32));
+        List<Persona> personas = new ArrayList<>();
+        personas.add(new Persona("Carlos", "Gómez", 25));
+        personas.add(new Persona("Ana", "Martínez", 30));
+        personas.add(new Persona("Luis", "Fernández", 20));
+        personas.add(new Persona("Carlos", "López", 22));
+        personas.add(new Persona("Ana", "Gómez", 28));
 
-        // Ordenpor nombre
+        System.out.println("Orden natural (por nombre y edad):");
         Collections.sort(personas);
-        System.out.println("Orden por nombre:");
-        System.out.println(personas);
+        personas.forEach(System.out::println);
 
-        // Orden por edad
-        personas.sort(new Ejercicio5.Persona.ComparadorPorEdad());
-        System.out.println("Orden por edad:");
-        System.out.println(personas);
+        System.out.println("\nOrden por edad:");
+        personas.sort(new ComparaPorEdad());
+        personas.forEach(System.out::println);
 
-        // Orden por nombre y edad
-        personas.sort(new Persona.ComparadorPorNombreYEdad());
-        System.out.println("Orden por nombre y edad:");
-        System.out.println(personas);
+        System.out.println("\nOrden por apellido:");
+        personas.sort(new ComparaPorApellido());
+        personas.forEach(System.out::println);
+
+        System.out.println("\nOrden por apellido, nombre y edad:");
+        personas.sort(new ComparaPorApellidoNombreEdad());
+        personas.forEach(System.out::println);
+
+        // Ejercicio 7:
+        // Primera persona del conjunto
+        Iterator it = personas.iterator();
+        while (it.hasNext()) {
+            System.out.println(personas.next());
+        }
+
+        SortedSet<Persona> sortedPersonas = new TreeSet<>(());
+        System.out.println("Primero en el SortedSet: " + personas.first);
+
+        // Ultima persona del conjunto
+        SortedSet<Persona> sortedPersonas2 = new TreeSet<>(personas);
+        System.out.println(personas.last());
+
+        // Anteriores a Juan
+        System.out.println("Anteriores a Juan" + personas.headSet(juan));
+
     }
-}
-
 }

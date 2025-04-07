@@ -1,10 +1,10 @@
 package Ejercicio6;
 
-public class ComparaPorEdad {
+import java.util.Comparator;
 
+public class ComparaPorEdad implements Comparator<Persona> {
     @Override
-    public int compareTo(Persona otra) {
-        return Integer.compare(this.edad, otra.edad);
+    public int compare(Persona p1, Persona p2) {
+        return Integer.compare(p1.getEdad(), p2.getEdad());
     }
-    }
-
+}
