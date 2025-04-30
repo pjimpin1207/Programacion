@@ -1,4 +1,4 @@
-package Ejercicio5;
+/*package Ejercicio5;
 
 public class Persona implements Comparable<Persona> {
     private String nombre;
@@ -22,7 +22,7 @@ public class Persona implements Comparable<Persona> {
     public String compareTo(Persona otra) {
         return this.nombre.compareTo(otra.nombre);
     }
-    */
+
 
     @Override
     public int compareTo(Persona otra) {
@@ -57,4 +57,4 @@ public class Persona implements Comparable<Persona> {
     }
 }
 
-
+*/

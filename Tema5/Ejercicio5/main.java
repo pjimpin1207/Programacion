@@ -1,4 +1,4 @@
-package Ejercicio5;
+/*package Ejercicio5;
 
 import java.util.*;
 
@@ -25,3 +25,4 @@ public class main {
         System.out.println(personas);
     }
 }
+*/

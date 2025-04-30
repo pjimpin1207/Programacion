@@ -1,3 +1,4 @@
+/*
 package Ejercicio6;
 
 import java.util.*;
@@ -46,3 +47,5 @@ public class Main {
 
     }
 }
+
+*/
